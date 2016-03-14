@@ -4,12 +4,70 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>アプリケーションの紹介</title>
+    <title>野球好きによるアプリケーション開発</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>  
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+    <style>
+      header{
+        background-image:url(baseball.jpg);
+        background-size:cover;
+        background-position:right center;
+      }
+      
+      header p{
+        margin:0;
+        height:240px;
+        font-size:50px;
+      }
+      
+      .container{
+        background-color:#ddd;
+      }
+      
+      .container #name img{
+        border:1px solid #fff;
+        border-radius:100%;
+      }
+      
+      .container #name p{
+        letter-spacing:0.1em;
+        color:#fff;
+        text-shadow:1px 1px 0px #000;
+        font-size:30px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello,world!</h1>
+    <header>
+      <p>野球好きによるアプリケーション開発</p>
+    </header>
+    <div class="container">
+      <div>
+        <h3>自己紹介</h3>
+          <div id="name">
+            <img src="IMG_1268.JPG" alt="" width="125" height="125"/>
+            <p>阪本 光</p>
+          </div>
+        <p>兵庫県出身、野球が好きな学生です。今回は私がリリースしたアプリケーションを紹介します。</p>
+        <a href="https://github.com/hi-ka">GitHubのユーザーページ</a>
+      </div>
+      <div>
+        <h3>メッセージボード</h3>
+        <p>メッセージのやりとりができる掲示板アプリです。</p>
+      </div>
+      <div>
+        <h3>Twitterクローン</h3>
+        <p>Twitterと同じ機能を持ったクローンサイトです。</p>
+      </div>
+      <div>
+        <h3>モノリスト</h3>
+        <p>Amazon APIを活用したアイテムシェアサービスです。</p>
+      </div>
+      <div>
+        <h3>オリジナルサービス</h3>
+        <p>数値を入力することによって打者のコース別打率、投手の球種別投球率など様々なデータを見ることができます。</p>
+      </div>
+    </div>
   </body>
 </html>
